@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    @yield('searchPage')
     @yield('navbar')
     @yield('content')
     @yield('skill_content')

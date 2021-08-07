@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,7 +43,13 @@ Route::delete('/admin/skills/delete/{id}', [App\Http\Controllers\AdminSkillContr
 Route::get('/skills/chart', [App\Http\Controllers\MainPagesController::class, 'chart'])->name('skills.chart');
 
 
+// testing Phase
 
+//1. Search Functionality----
+
+Route::get('/search',[App\Http\Controllers\MainPagesController::class, 'search'])->name('main.search');
+
+// end search
 
 Auth::routes();
 
