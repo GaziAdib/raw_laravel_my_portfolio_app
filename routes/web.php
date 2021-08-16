@@ -49,7 +49,15 @@ Route::get('/skills/chart', [App\Http\Controllers\MainPagesController::class, 'c
 
 Route::get('/search',[App\Http\Controllers\MainPagesController::class, 'search'])->name('main.search');
 
+
 // end search
+
+
+//2. Converting PDF ----
+
+Route::get('/pdf',[App\Http\Controllers\PDFController::class, 'PdfConvert'])->name('main.pdf');
+
+// end Of PDF
 
 Auth::routes();
 
